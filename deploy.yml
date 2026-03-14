@@ -6,7 +6,7 @@
   
   tasks:
     - name: Pull the latest image from Docker Hub
-      command: docker pull ranag99/spe-mini-project:latest
+      command: docker pull bhavy0949/spe-mini-project:latest
 
     - name: Stop the existing calculator container (if it exists)
       command: docker stop calc-container
@@ -19,4 +19,4 @@
 
     - name: Start the new interactive calculator container
       # -d (detached) -i (interactive) -t (allocate TTY)
-      command: docker run -dit --name calc-container ranag99/spe-mini-project:latest
+      command: docker run -dit --name calc-container bhavy0949/spe-mini-project:latest
